@@ -3,11 +3,13 @@ using System.Collections.Generic;
 using System.Drawing;
 using System.Linq;
 using System.Windows.Forms;
+using NLog;
 
 namespace FunctionalAnalysisWinFormsApp
 {
     public partial class MainForm : Form
     {
+        private Logger loggerMainForm = LogManager.GetCurrentClassLogger();
         private List<BernstainModel> bernstainsModels = new List<BernstainModel>();
         private Random rnd = new Random();
         private int p;
@@ -18,6 +20,7 @@ namespace FunctionalAnalysisWinFormsApp
         public MainForm()
         {
             InitializeComponent();
+            loggerMainForm.Info("Приложение запущено");
         }
 
         private void MainForm_Load(object sender, EventArgs e)
@@ -64,7 +67,7 @@ namespace FunctionalAnalysisWinFormsApp
             {
                 if (result > long.MaxValue / i)
                 {
-                    MessageBox.Show($"Переполнение при вычислении факториала {_n}!");
+                    new ArgumentException($"Переполнение при вычислении факториала {_n}!");
                     return long.MaxValue;
                 }
 
@@ -83,17 +86,28 @@ namespace FunctionalAnalysisWinFormsApp
 
         private double BernsteinFormula()
         {
-            InitValue();
-            arraySumm = new double[n + 1];
             double sum = 0;
-            for (int i = 0; i <= n; i++)
+            try
             {
-                double t = (double)i / n;
-                double functionValue = FunctionFX(t);
-                double binomCoeff = BinomialCoefficient(n, i);
-                double basis = binomCoeff * Math.Pow(x, i) * Math.Pow(1 - x, n - i);
-                sum = functionValue * basis;
-                arraySumm[i] = sum;
+                InitValue();
+                arraySumm = new double[n + 1];
+                for (int i = 0; i <= n; i++)
+                {
+                    double t = (double)i / n;
+                    loggerMainForm.Info($"Значение k/n = {t}");
+                    double functionValue = FunctionFX(t);
+                    loggerMainForm.Info($"Значение f(x) = {functionValue}");
+                    double binomCoeff = BinomialCoefficient(n, i);
+                    loggerMainForm.Info($"Значение биномиального коэфиициента = {binomCoeff}");
+                    double basis = binomCoeff * Math.Pow(x, i) * Math.Pow(1 - x, n - i);
+                    sum = functionValue * basis;
+                    loggerMainForm.Info($"Значение полинома Бернштейна для B{n} = {sum}");
+                    arraySumm[i] = sum;
+                }
+            }
+            catch (Exception ex)
+            {
+                loggerMainForm.Error($"{ex.Message}");
             }
 
             return Math.Round(sum, 3);
@@ -101,11 +115,18 @@ namespace FunctionalAnalysisWinFormsApp
 
         private void PrintBernstein()
         {
-            BernsteinFormula();
-            FillingArraySumm();
-            foreach (var item in bernstainsModels)
+            try
             {
-                rTbxPrintInfo.AppendText($"\n{item.NameB}: {Math.Round(item.SummBernstain, 3)}");
+                BernsteinFormula();
+                FillingArraySumm();
+                foreach (var item in bernstainsModels)
+                {
+                    rTbxPrintInfo.AppendText($"\n{item.NameB}: {Math.Round(item.SummBernstain, 3)}");
+                }
+            }
+            catch (Exception ex)
+            {
+                loggerMainForm.Error($"{ex.Message}");
             }
         }
 

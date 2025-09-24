@@ -7,20 +7,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="57dd2ece-0430-4b3f-86f7-1372ea321fa7" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/FunctionalAnalysisWinFormsApp/BernstainModel.cs" afterDir="false" />
+    <list default="true" id="57dd2ece-0430-4b3f-86f7-1372ea321fa7" name="Changes" comment="Создана логика получения значений по полиному Бернштейна. Обработаны кнопки.">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.FunctionalAnalysisWinFormsApp/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FunctionalAnalysisWinFormsApp/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FunctionalAnalysisWinFormsApp/FunctionalAnalysisWinFormsApp.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/FunctionalAnalysisWinFormsApp/FunctionalAnalysisWinFormsApp.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FunctionalAnalysisWinFormsApp/MainForm.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FunctionalAnalysisWinFormsApp/MainForm.Designer.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FunctionalAnalysisWinFormsApp/MainForm.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FunctionalAnalysisWinFormsApp/MainForm.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FunctionalAnalysisWinFormsApp/bin/Debug/FunctionalAnalysisWinFormsApp.exe" beforeDir="false" afterPath="$PROJECT_DIR$/FunctionalAnalysisWinFormsApp/bin/Debug/FunctionalAnalysisWinFormsApp.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FunctionalAnalysisWinFormsApp/bin/Debug/FunctionalAnalysisWinFormsApp.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/FunctionalAnalysisWinFormsApp/bin/Debug/FunctionalAnalysisWinFormsApp.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FunctionalAnalysisWinFormsApp/obj/Debug/FunctionalAnalysisWinFormsApp.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/FunctionalAnalysisWinFormsApp/obj/Debug/FunctionalAnalysisWinFormsApp.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FunctionalAnalysisWinFormsApp/obj/Debug/FunctionalAnalysisWinFormsApp.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/FunctionalAnalysisWinFormsApp/obj/Debug/FunctionalAnalysisWinFormsApp.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FunctionalAnalysisWinFormsApp/obj/Debug/FunctionalAnalysisWinFormsApp.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/FunctionalAnalysisWinFormsApp/obj/Debug/FunctionalAnalysisWinFormsApp.csproj.FileListAbsolute.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FunctionalAnalysisWinFormsApp/obj/Debug/FunctionalAnalysisWinFormsApp.csproj.GenerateResource.cache" beforeDir="false" afterPath="$PROJECT_DIR$/FunctionalAnalysisWinFormsApp/obj/Debug/FunctionalAnalysisWinFormsApp.csproj.GenerateResource.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FunctionalAnalysisWinFormsApp/obj/Debug/FunctionalAnalysisWinFormsApp.exe" beforeDir="false" afterPath="$PROJECT_DIR$/FunctionalAnalysisWinFormsApp/obj/Debug/FunctionalAnalysisWinFormsApp.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FunctionalAnalysisWinFormsApp/obj/Debug/FunctionalAnalysisWinFormsApp.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/FunctionalAnalysisWinFormsApp/obj/Debug/FunctionalAnalysisWinFormsApp.pdb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,6 +34,7 @@
     "accountId": "9ac9b06e-39ea-4a90-9180-9f754b5858e2"
   }
 }]]></component>
+  <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectColorInfo"><![CDATA[{
   "associatedIndex": 1
 }]]></component>
@@ -95,13 +85,23 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1758632176287</updated>
-      <workItem from="1758632177757" duration="23682000" />
+      <workItem from="1758632177757" duration="24938000" />
     </task>
+    <task id="LOCAL-00001" summary="Создана логика получения значений по полиному Бернштейна. Обработаны кнопки.">
+      <option name="closed" value="true" />
+      <created>1758694131873</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1758694131873</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -116,5 +116,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+    <MESSAGE value="Создана логика получения значений по полиному Бернштейна. Обработаны кнопки." />
+    <option name="LAST_COMMIT_MESSAGE" value="Создана логика получения значений по полиному Бернштейна. Обработаны кнопки." />
   </component>
 </project>
