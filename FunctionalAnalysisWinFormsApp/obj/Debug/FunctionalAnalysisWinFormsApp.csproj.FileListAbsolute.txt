@@ -7,3 +7,8 @@ C:\Users\Алексей\Desktop\Учеба\github\FunctionalAnalysis\FunctionalA
 C:\Users\Алексей\Desktop\Учеба\github\FunctionalAnalysis\FunctionalAnalysisWinFormsApp\FunctionalAnalysisWinFormsApp\obj\Debug\FunctionalAnalysisWinFormsApp.csproj.CoreCompileInputs.cache
 C:\Users\Алексей\Desktop\Учеба\github\FunctionalAnalysis\FunctionalAnalysisWinFormsApp\FunctionalAnalysisWinFormsApp\obj\Debug\FunctionalAnalysisWinFormsApp.exe
 C:\Users\Алексей\Desktop\Учеба\github\FunctionalAnalysis\FunctionalAnalysisWinFormsApp\FunctionalAnalysisWinFormsApp\obj\Debug\FunctionalAnalysisWinFormsApp.pdb
+C:\Users\Алексей\Desktop\Учеба\github\FunctionalAnalysis\FunctionalAnalysisWinFormsApp\FunctionalAnalysisWinFormsApp\obj\Debug\FunctionalAnalysisWinFormsApp.exe.config
+C:\Users\Алексей\Desktop\Учеба\github\FunctionalAnalysis\FunctionalAnalysisWinFormsApp\FunctionalAnalysisWinFormsApp\obj\Debug\FunctionalAnalysisWinFormsApp.MainForm.resources
+C:\Users\Алексей\Desktop\Учеба\github\FunctionalAnalysis\FunctionalAnalysisWinFormsApp\FunctionalAnalysisWinFormsApp\bin\Debug\NLog.dll
+C:\Users\Алексей\Desktop\Учеба\github\FunctionalAnalysis\FunctionalAnalysisWinFormsApp\FunctionalAnalysisWinFormsApp\bin\Debug\NLog.xml
+C:\Users\Алексей\Desktop\Учеба\github\FunctionalAnalysis\FunctionalAnalysisWinFormsApp\FunctionalAnalysisWinFormsApp\obj\Debug\Function.14F154D3.Up2Date
